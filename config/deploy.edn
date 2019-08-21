@@ -1,0 +1,4 @@
+{:dependencies       [:project :dependencies]}
+ :packages           [:include "config/packages.edn" {:type :edn}]
+ :releases {:all     [:include "config/deploy/coast.all.edn" {:type :edn}]}
+ :repositories       [:include "config/repositories.edn"  {:type :edn}]}

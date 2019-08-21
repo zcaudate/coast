@@ -1,0 +1,5 @@
+{"clojars"  
+ {:id       "clojars"
+  :url      "https://clojars.org/repo"
+  :authentication {:username "testuser"
+                   :password "password"}}}

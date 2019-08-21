@@ -1,0 +1,8 @@
+{:type       :maven
+ :repository "clojars"
+ :manifest   [coast/common
+              coast/db
+              coast/migrations
+              coast/generators
+              coast/deploy
+              coast/web]}

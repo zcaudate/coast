@@ -1,0 +1,46 @@
+{coast/common
+ {:description   "common libs for coast"
+  :include       [[coast.time    :complete]
+                  [coast.time2   :complete]
+                  [coast.utils   :complete]
+                  [coast.error   :complete]
+                  [coast.env     :complete]
+                  [coast.logger  :complete]]}
+
+ coast/db
+ {:description   "database libs for coast"
+  :include       [[coast.db     :complete]]
+  :dependencies  [com.zaxxer/HikariCP]}
+  
+ coast/migrations
+ {:description   "database libs for coast"
+  :include       [[coast.migrations   :complete]]
+  :dependencies  []}
+  
+ coast/generators
+ {:description   "database libs for coast"
+  :include       [[coast.generators   :complete]]
+  :dependencies  []}
+
+ #_coast/deploy
+ #_{:description   "database libs for coast"
+  :include       [[coast.dev   :complete]
+                  [coast.prod   :complete]
+                  [coast.theta   :complete]
+                  [coast.repl   :complete]]
+  :dependencies  []}
+
+ coast/web
+ {:description   "web libs for coast"
+  :include       [[coast.assets     :complete]
+                  [coast.components :complete]
+                  ;[coast.middleware :complete]
+                  ;[coast.responese :complete]
+                  ;[coast.router :complete]
+                  ;[coast.validation :complete]
+                  ]
+  :dependencies  [ring/ring-core
+                  ring/ring-devel
+                  ring/ring-ssl
+                  ring/ring-headers
+                  ring/ring-anti-forgery]}}
